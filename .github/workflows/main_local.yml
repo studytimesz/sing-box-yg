@@ -17,7 +17,7 @@ jobs:
     # 每行一个{serv00服务器}，一个服务也可，末尾用,间隔，最后一个服务器末尾无需用,间隔
       ACCOUNTS: >
         [
-        {"RES":"n", "REP":"n", "SSH_USER":"${{ secrets.SSH_USER }}", "SSH_PASS":"${{ secrets.SSH_PASS }}", "REALITY":"", "SUUID":"${{ secrets.UUID }}", "TCP1_PORT":"${{ secrets.TCP1 }}", "TCP2_PORT":"${{ secrets.TCP2 }}", "UDP_PORT":"${{ secrets.UDP }}", "HOST":"s2.hostuno.com", "ARGO_DOMAIN":"", "ARGO_AUTH":""} 
+        {"RES":"n", "REP":"n", "SSH_USER":"${{ secrets.SSH_USER }}", "SSH_PASS":"${{ secrets.SSH_PASS }}", "REALITY":"", "SUUID":"", "TCP1_PORT":"10629", "TCP2_PORT":"20629", "UDP_PORT":"20629", "HOST":"s2.hostuno.com", "ARGO_DOMAIN":"", "ARGO_AUTH":""} 
         ]
     steps:
       - name: Checkout Repository
